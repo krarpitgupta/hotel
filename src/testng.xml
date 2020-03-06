@@ -1,0 +1,9 @@
+<suite thread-count = "1" verbose = "1" name="Hotel WebSite Suite">
+
+    <test name = "Search Hotel Meeting Criteria">
+        <classes>
+            <class name = "hotelsearch.SearchTest"/>
+        </classes>
+    </test>
+
+</suite>
