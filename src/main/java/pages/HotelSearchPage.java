@@ -67,7 +67,7 @@ public class HotelSearchPage {
                     strHotelName = driver.findElement(By.xpath(strHotelNameXpath)).getText();
                     strHotelPrice = driver.findElement(By.xpath(strHotelPriceXpath)).getText();
                     //System.out.println("Guest Rating : " + rating + " Hotel Name : " + strHotelName + " Hotel Price : " + strHotelPrice);
-                    if(count != reqSize){
+                    if(count != reqSize && count <= iNoResults){
                         hotelDetails.put(strHotelName.replace(",",""), strHotelPrice.replace(",","").replace("£",""));
                     }
                     count++;
